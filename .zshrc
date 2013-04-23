@@ -13,7 +13,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin
 
 # Source extras
-for file in ~/.{aliases,functions,exports}; do
+for file in ~/.{aliases,functions,exports,extras}; do
         [ -r "$file" ] && source "$file"
 done
 unset file
