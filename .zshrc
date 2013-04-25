@@ -5,7 +5,8 @@ export ZSH_THEME="prose"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git tmuxinator)
+alias mux=tmuxinator
 
 source $ZSH/oh-my-zsh.sh
 

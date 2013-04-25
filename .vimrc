@@ -57,6 +57,7 @@ Bundle 'editorconfig/editorconfig-vim'
 Bundle 'tpope/vim-markdown'
 Bundle 'ctrlp.vim'
 Bundle 'tsaleh/vim-matchit'
+Bundle 'majutsushi/tagbar'
 
 " Configurations
 """"""""""""""""
