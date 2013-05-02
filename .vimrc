@@ -83,7 +83,7 @@ au TabLeave * silent! :wa
 au VimResized * exe "normal! \<c-w>="
 filetype plugin indent on
 
-autocmd FileType html, xhtml set ft=html.html " For SnipMate
+autocmd FileType html set ft=html.html " For SnipMate
 au BufRead,BufNewFile *.html set filetype=html.html
 
 " Colours
@@ -190,10 +190,10 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 
-autocmd BufWritePre *.js :%s/\s\+$//e
-autocmd BufWritePre *.html :%s/\s\+$//e
-autocmd BufWritePre *.css :%s/\s\+$//e
-autocmd BufWritePre *.less :%s/\s\+$//e
+"autocmd BufWritePre *.js :%s/\s\+$//e
+"autocmd BufWritePre *.html :%s/\s\+$//e
+"autocmd BufWritePre *.css :%s/\s\+$//e
+"autocmd BufWritePre *.less :%s/\s\+$//e
 
 " Custom mappings
 """"""""""""""""""
