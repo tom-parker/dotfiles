@@ -24,10 +24,7 @@ unset file
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
 # z
-. ~/bin/z/z.sh
-
-#virtual env
-source /usr/local/bin/virtualenvwrapper.sh
+. `brew --prefix`/etc/profile.d/z.sh
 
 #git completition
 source ~/bin/.git-completion.sh
