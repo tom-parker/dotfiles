@@ -5,9 +5,6 @@ filetype off                   " required!
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" let Vundle manage Vundle
-Plugin 'gmarik/vundle'
-
 " VCS
 Plugin 'tpope/vim-fugitive'
 
@@ -22,6 +19,7 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'sophacles/vim-bundle-sparkup'
 Plugin 'corntrace/bufexplorer'
+Plugin 'bling/vim-airline'
 
 " Syntaxes and such.
 Plugin 'leshill/vim-json'
@@ -39,7 +37,6 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'skammer/vim-css-color'
 Plugin 'mgutz/vim-colors'
 Plugin 'ehamberg/vim-cute-python'
-Plugin 'Lokaltog/vim-powerline'
 Plugin 'Gundo'
 Plugin 'tomtom/tlib_vim'
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -56,6 +53,7 @@ filetype plugin indent on
 
 " Configurations
 """"""""""""""""
+set guifont=Menlo\ for\ Powerline
 set background=dark
 
 " Wildmenu completion
@@ -262,3 +260,5 @@ nnoremap   <Up>     <NOP>
 nnoremap   <Down>   <NOP>
 nnoremap   <Left>   <NOP>
 nnoremap   <Right>  <NOP>
+
+let g:airline_powerline_fonts = 1
