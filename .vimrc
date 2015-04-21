@@ -2,62 +2,57 @@ set encoding=utf-8
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
-Bundle 'gmarik/vundle'
-
-" Vundle help
-""""""""""""""
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install(update) bundles
-" :BundleSearch(!) foo - search(or refresh cache first) for foo
-" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
-
+Plugin 'gmarik/vundle'
 
 " VCS
-Bundle 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
 
 " System
-Bundle 'scrooloose/nerdtree'
-Bundle 'mileszs/ack.vim'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'tpope/vim-surround'
-Bundle 'scrooloose/syntastic'
-Bundle 'ervandew/supertab'
-Bundle 'Raimondi/delimitMate'
-Bundle 'kien/rainbow_parentheses.vim'
-Bundle 'sophacles/vim-bundle-sparkup'
-Bundle 'corntrace/bufexplorer'
+Plugin 'scrooloose/nerdtree'
+Plugin 'mileszs/ack.vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'tpope/vim-surround'
+Plugin 'scrooloose/syntastic'
+Plugin 'ervandew/supertab'
+Plugin 'Raimondi/delimitMate'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'sophacles/vim-bundle-sparkup'
+Plugin 'corntrace/bufexplorer'
 
 " Syntaxes and such.
-Bundle 'leshill/vim-json'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'groenewege/vim-less'
+Plugin 'leshill/vim-json'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'groenewege/vim-less'
 
 " Python bundles
-Bundle 'fs111/pydoc.vim'
-Bundle 'vim-scripts/pep8'
-Bundle 'atourino/jinja.vim'
-Bundle 'vim-scripts/python_match.vim'
+Plugin 'fs111/pydoc.vim'
+Plugin 'vim-scripts/pep8'
+Plugin 'atourino/jinja.vim'
+Plugin 'vim-scripts/python_match.vim'
 
 " Fun, but not useful
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'skammer/vim-css-color'
-Bundle 'mgutz/vim-colors'
-Bundle 'ehamberg/vim-cute-python'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'Gundo'
-Bundle 'tomtom/tlib_vim'
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'honza/snipmate-snippets'
-Bundle 'garbas/vim-snipmate'
-Bundle 'editorconfig/editorconfig-vim'
-Bundle 'tpope/vim-markdown'
-Bundle 'ctrlp.vim'
-Bundle 'tsaleh/vim-matchit'
-Bundle 'majutsushi/tagbar'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'skammer/vim-css-color'
+Plugin 'mgutz/vim-colors'
+Plugin 'ehamberg/vim-cute-python'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'Gundo'
+Plugin 'tomtom/tlib_vim'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'honza/snipmate-snippets'
+Plugin 'garbas/vim-snipmate'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'tpope/vim-markdown'
+Plugin 'ctrlp.vim'
+Plugin 'tsaleh/vim-matchit'
+Plugin 'majutsushi/tagbar'
+
+call vundle#end()
+filetype plugin indent on
 
 " Configurations
 """"""""""""""""
