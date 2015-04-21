@@ -9,8 +9,6 @@ brew upgrade
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 brew install findutils
 
-brew install z
-
 # Install wget with IRI support
 brew install wget
 
