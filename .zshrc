@@ -45,3 +45,6 @@ unset file
 
 #git completition
 source ~/bin/.git-completion.sh
+
+export LC_CTYPE=en_US.UTF-8
+export LANG=en_US.UTF-8

@@ -26,11 +26,7 @@ Plugin 'leshill/vim-json'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'groenewege/vim-less'
 
-" Python bundles
-Plugin 'fs111/pydoc.vim'
-Plugin 'vim-scripts/pep8'
-Plugin 'atourino/jinja.vim'
-Plugin 'vim-scripts/python_match.vim'
+Plugin 'chriskempson/base16-vim'
 
 " Fun, but not useful
 Plugin 'altercation/vim-colors-solarized'
