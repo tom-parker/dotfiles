@@ -7,7 +7,7 @@ export ZSH=/Users/tom.parker/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="tp"
 
-ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="false"
 COMPLETION_WAITING_DOTS="true"
 
 
@@ -46,5 +46,8 @@ unset file
 #git completition
 source ~/bin/.git-completion.sh
 
-export LC_CTYPE=en_US.UTF-8
+export LC_ALL=
 export LANG=en_US.UTF-8
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
