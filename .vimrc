@@ -36,13 +36,17 @@ Plugin 'ehamberg/vim-cute-python'
 Plugin 'Gundo'
 Plugin 'tomtom/tlib_vim'
 Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'honza/snipmate-snippets'
-Plugin 'garbas/vim-snipmate'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'tpope/vim-markdown'
 Plugin 'ctrlp.vim'
 Plugin 'tsaleh/vim-matchit'
 Plugin 'majutsushi/tagbar'
+
+" Track the engine.
+Plugin 'SirVer/ultisnips'
+
+" Snippets are separated from the engine. Add this if you want them:
+Plugin 'honza/vim-snippets'
 
 call vundle#end()
 filetype plugin indent on
@@ -111,8 +115,8 @@ set list listchars=tab:→\ ,trail:·
 " Tabs & spaces
 set tabstop=4     " a tab is four spaces
 set shiftwidth=4  " number of spaces to use for autoindenting
-set softtabstop=4
-set expandtab
+"set softtabstop=4
+set noexpandtab
 set shiftround    " use multiple of shiftwidth when indenting with '<' and '>'
 set smarttab      " insert tabs on the start of a line according to
                   "    shiftwidth, not tabstop
@@ -258,3 +262,11 @@ nnoremap   <Left>   <NOP>
 nnoremap   <Right>  <NOP>
 
 let g:airline_powerline_fonts = 1
+
+:nnoremap n nzz
+:nnoremap N Nzz
+
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
