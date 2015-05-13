@@ -1,9 +1,14 @@
 My dotfiles
 
 Install -
-homebrew
-chrome
-iterm2
+* xcode
+* homebrew
+* chrome
+* iterm2
+* oh-my-zsh
+
+Clone dotfiles
+```./bootstrap.sh```
 
 
 
