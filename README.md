@@ -8,7 +8,7 @@ Install -
 * oh-my-zsh
 
 Clone dotfiles
-```./bootstrap.sh```
+``./bootstrap.sh``
 
 
 
