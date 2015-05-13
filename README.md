@@ -1,8 +1,9 @@
 My dotfiles
 
-Requirements -
+Install -
 homebrew
-Steve Losh oh-my-zsh
-Iterm2
+chrome
+iterm2
+
 
 
