@@ -5,6 +5,9 @@ filetype off                   " required!
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
 " VCS
 Plugin 'tpope/vim-fugitive'
 
@@ -24,13 +27,12 @@ Plugin 'bling/vim-airline'
 " Syntaxes and such.
 Plugin 'leshill/vim-json'
 Plugin 'kchmck/vim-coffee-script'
-Plugin 'groenewege/vim-less'
+Plugin 'cakebaker/scss-syntax.vim'
 
 Plugin 'chriskempson/base16-vim'
 
 " Fun, but not useful
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'skammer/vim-css-color'
 Plugin 'mgutz/vim-colors'
 Plugin 'ehamberg/vim-cute-python'
 Plugin 'Gundo'
@@ -78,9 +80,10 @@ filetype plugin indent on
 
 autocmd FileType html set ft=html.html " For SnipMate
 au BufRead,BufNewFile *.html set filetype=html.html
+au BufRead,BufNewFile *.scss set filetype=scss.css
 
 " Colours
-colorscheme chance-of-storm
+colorscheme solarized
 
 " Basic
 syntax enable
@@ -95,7 +98,7 @@ set nowrap        " don't wrap lines
 set showmatch     " set show matching parenthesis
 set ignorecase    " ignore case when searching
 set smartcase     " ignore case if search pattern is all lowercase,
-                  "  case-sensitive otherwise
+"  case-sensitive otherwise
 set hlsearch      " highlight search terms
 set incsearch     " show search matches as you type
 set history=1000         " remember more commands and search history
@@ -106,7 +109,7 @@ set noerrorbells         " don't beep
 
 " Remove the toolbar if we're running under a GUI (e.g. MacVIM).
 if has("gui_running")
-  set guioptions=-t
+	set guioptions=-t
 endif
 
 " Special characters for hilighting non-priting spaces/tabs/etc.
@@ -119,7 +122,7 @@ set shiftwidth=4  " number of spaces to use for autoindenting
 set noexpandtab
 set shiftround    " use multiple of shiftwidth when indenting with '<' and '>'
 set smarttab      " insert tabs on the start of a line according to
-                  "    shiftwidth, not tabstop
+"    shiftwidth, not tabstop
 set autoindent    " always set autoindenting on
 set copyindent    " copy the previous indentation on autoindenting
 
@@ -227,7 +230,7 @@ set laststatus=2
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_jump=0
 
-let &t_Co=256
+set t_Co=256
 
 noremap <leader>b :BufExplorer<return>
 
@@ -249,7 +252,9 @@ let g:Powerline_symbols = 'fancy'
 autocmd VimEnter * NERDTree
 let NERDTreeShowBookmarks=1
 let NERDTreeChDirMode=2
- " Line and Col Hilighting               
+let NERDTreeMouseMode=2
+set mouse=a
+" Line and Col Hilighting               
 au WinLeave * set nocursorline nocursorcolumn                                                                                                                                                                                                                             
 au WinEnter * set cursorline cursorcolumn
 au BufLeave * set nocursorline nocursorcolumn
@@ -270,3 +275,7 @@ let g:airline_powerline_fonts = 1
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+set regexpengine=1
+
+let g:ctrlp_custom_ignore = 'node_modules\|bower_components\|DS_Store\|git'
